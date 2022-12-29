@@ -103,7 +103,7 @@ def phone_numbers(name):
 @input_error
 def show_all_phonebook(*args, **kwargs):
     for k, v in phonebook.items():
-        print(k, ":", *v)
+        print(k, ":", ", ".join(v))
 
 
 # Function to close the bot
